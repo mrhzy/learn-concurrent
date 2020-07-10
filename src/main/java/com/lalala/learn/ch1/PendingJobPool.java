@@ -109,7 +109,7 @@ public class PendingJobPool {
         JobInfo<R> jobInfo = new JobInfo<R>(jobName, jobLength, taskProcessor, expireTime);
 
         if (jobInfoMap.putIfAbsent(jobName, jobInfo) != null) {
-            throw new RuntimeException(jobName+"已经注册！");
+            throw new RuntimeException(jobName + "已经注册！");
         }
     }
 
@@ -125,7 +125,7 @@ public class PendingJobPool {
     }
 
     /*获得工作的整体处理进度*/
-    public <R> String getTaskProgess(String jobName) {
+    public <R> String getTaskProcess(String jobName) {
         JobInfo<R> jobInfo = getJob(jobName);
         return jobInfo.getTotalProcess();
     }

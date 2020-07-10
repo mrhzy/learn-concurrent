@@ -36,7 +36,7 @@ public class AppTest {
             while (i < 350) {
                 List<TaskResult<String>> taskResultList = pool.getTaskDetail(JOB_NAME);
                 if (!taskResultList.isEmpty()) {
-                    System.out.println(pool.getTaskProgess(JOB_NAME));
+                    System.out.println(pool.getTaskProcess(JOB_NAME));
                     System.out.println(taskResultList);
                 }
 
