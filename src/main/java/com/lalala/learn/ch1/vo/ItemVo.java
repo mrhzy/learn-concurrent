@@ -1,4 +1,4 @@
-package com.lalala.learn.vo;
+package com.lalala.learn.ch1.vo;
 
 import java.util.concurrent.Delayed;
 import java.util.concurrent.TimeUnit;
@@ -34,6 +34,7 @@ public class ItemVo<T> implements Delayed {
     /*
      * 这个方法返回到激活日期的剩余时间，时间单位由单位参数指定。
      */
+    @Override
     public long getDelay(TimeUnit unit) {
 
         return unit.convert(this.activeTime - System.currentTimeMillis(), unit);
@@ -42,6 +43,7 @@ public class ItemVo<T> implements Delayed {
     /*
      * Delayed接口继承了Comparable接口，按剩余时间排序，实际计算考虑精度为纳秒数
      */
+    @Override
     public int compareTo(Delayed o) {
 
         long d = getDelay(TimeUnit.MILLISECONDS) - o.getDelay(TimeUnit.MILLISECONDS);

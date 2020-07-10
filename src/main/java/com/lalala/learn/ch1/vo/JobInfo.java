@@ -1,12 +1,10 @@
-package com.lalala.learn.vo;
+package com.lalala.learn.ch1.vo;
 
-import com.lalala.learn.CheckJobProcessor;
-import jdk.nashorn.internal.objects.annotations.Where;
+import com.lalala.learn.ch1.CheckJobProcessor;
 
 import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.LinkedBlockingDeque;
-import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**

@@ -1,4 +1,4 @@
-package com.lalala.learn.vo;
+package com.lalala.learn.ch1.vo;
 
 /**
  * @ClassName ITaskProcessor

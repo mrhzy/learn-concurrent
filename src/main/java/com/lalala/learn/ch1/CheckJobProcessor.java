@@ -1,7 +1,7 @@
-package com.lalala.learn;
+package com.lalala.learn.ch1;
 
-import com.lalala.learn.vo.ItemVo;
-import com.lalala.learn.vo.JobInfo;
+import com.lalala.learn.ch1.vo.ItemVo;
+import com.lalala.learn.ch1.vo.JobInfo;
 
 import java.util.Map;
 import java.util.concurrent.DelayQueue;
