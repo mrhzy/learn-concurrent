@@ -1,9 +1,9 @@
-package com.lalala.learn.ch1;
+package com.lalala.learn.ch8a;
 
-import com.lalala.learn.ch1.vo.ITaskProcessor;
-import com.lalala.learn.ch1.vo.JobInfo;
-import com.lalala.learn.ch1.vo.TaskResult;
-import com.lalala.learn.ch1.vo.TaskResultType;
+import com.lalala.learn.ch8a.vo.ITaskProcessor;
+import com.lalala.learn.ch8a.vo.JobInfo;
+import com.lalala.learn.ch8a.vo.TaskResult;
+import com.lalala.learn.ch8a.vo.TaskResultType;
 
 import java.util.List;
 import java.util.Map;

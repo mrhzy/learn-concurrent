@@ -1,4 +1,4 @@
-package com.lalala.learn.ch1.vo;
+package com.lalala.learn.ch8a.vo;
 
 import java.util.concurrent.Delayed;
 import java.util.concurrent.TimeUnit;

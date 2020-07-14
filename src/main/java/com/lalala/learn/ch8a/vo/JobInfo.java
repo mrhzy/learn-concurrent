@@ -1,6 +1,6 @@
-package com.lalala.learn.ch1.vo;
+package com.lalala.learn.ch8a.vo;
 
-import com.lalala.learn.ch1.CheckJobProcessor;
+import com.lalala.learn.ch8a.CheckJobProcessor;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -1,7 +1,7 @@
-package com.lalala.learn.ch1.demo;
+package com.lalala.learn.ch8a.demo;
 
-import com.lalala.learn.ch1.PendingJobPool;
-import com.lalala.learn.ch1.vo.TaskResult;
+import com.lalala.learn.ch8a.PendingJobPool;
+import com.lalala.learn.ch8a.vo.TaskResult;
 import com.lalala.learn.tools.SleepTools;
 
 import java.util.List;

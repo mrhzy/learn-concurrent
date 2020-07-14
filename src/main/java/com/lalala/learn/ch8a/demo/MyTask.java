@@ -1,8 +1,8 @@
-package com.lalala.learn.ch1.demo;
+package com.lalala.learn.ch8a.demo;
 
-import com.lalala.learn.ch1.vo.ITaskProcessor;
-import com.lalala.learn.ch1.vo.TaskResult;
-import com.lalala.learn.ch1.vo.TaskResultType;
+import com.lalala.learn.ch8a.vo.ITaskProcessor;
+import com.lalala.learn.ch8a.vo.TaskResult;
+import com.lalala.learn.ch8a.vo.TaskResultType;
 
 import java.util.Random;
 
