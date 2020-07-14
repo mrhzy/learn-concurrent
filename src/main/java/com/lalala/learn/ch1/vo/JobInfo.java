@@ -93,6 +93,10 @@ public class JobInfo<R> {
         return taskResultList;
     }
 
+    /*每个任务处理完成后，记录任务的处理结果，因为从业务应用的角度来说，
+      对查询任务进度数据的一致性要求不高，
+      我们保证最终一致性即可，无需对整个方法加锁
+    */
     public void addTaskResult(TaskResult<R> taskResult) {
         if (TaskResultType.Success.equals(taskResult.getResultType())) {
             successCount.incrementAndGet();
@@ -102,6 +106,7 @@ public class JobInfo<R> {
         taskDetailQueues.addLast(taskResult);
 
         if (taskProcessCount.get() == jobLength) {
+            //工作的结果，放到定时缓存，到期后清除
             checkJob.putJob(jobName, expireTime);
         }
     }
